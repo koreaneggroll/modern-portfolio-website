@@ -15,6 +15,8 @@ import {
   Divider
 } from '@chakra-ui/react';
 
+import { ChevronRightIcon } from '@chakra-ui/icons'
+
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 function TopBar() {
@@ -27,7 +29,7 @@ function TopBar() {
 
             <Center display={{base: 'none', md: 'flex', lg: 'flex'}} color="gray.600">
                 <Box ml={{base: '0', md: '2', lg: '20'}}>
-                    /
+                    <ChevronRightIcon />
                 </Box>
 
                 <Box ml={{base: '0', md: '2', lg: '20'}}>
