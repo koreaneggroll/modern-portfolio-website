@@ -2,11 +2,6 @@ import React from 'react';
 import {
   ChakraProvider,
   Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
   theme,
   Flex,
   Spacer,
@@ -19,10 +14,10 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
-function TopBar() {
+function Page() {
   return (
     <ChakraProvider theme={theme}>
-        <Flex m={6} >
+        <Flex className="topbar" m={6} >
             <Center className="logo">
                 Logo
             </Center>
@@ -72,8 +67,13 @@ function TopBar() {
 
         <Divider orientation='horizontal'/>
 
+
+        <Flex className="Welcome">
+            <Text className="welcome-text"></Text>
+        </Flex>
+
     </ChakraProvider>
   );
 }
 
-export default TopBar;
+export default Page;
