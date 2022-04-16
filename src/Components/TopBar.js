@@ -27,22 +27,22 @@ function TopBar() {
             <Spacer/>
 
             <Center className="icons">
-                <Circle mr={5} size='40px' className="icon">
+                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
                     Icon
                 </Circle>
 
 
-                <Circle mr={5} className="icon">
+                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
                     Icon
                 </Circle>
 
 
-                <Circle mr={5} className="icon">
+                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
                     Icon
                 </Circle>
 
 
-                <Circle mr={5} className="icon">
+                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
                     Icon
                 </Circle>
 
