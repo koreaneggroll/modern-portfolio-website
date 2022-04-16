@@ -11,7 +11,8 @@ import {
   Flex,
   Spacer,
   Circle,
-  Center
+  Center,
+  Divider
 } from '@chakra-ui/react';
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
@@ -28,6 +29,9 @@ function TopBar() {
 
             <Center className="icons">
                 <Circle _hover={{color: 'gray'}} mr={6} className="icon">
+                    {
+                        //use icon button
+                    }
                     Icon
                 </Circle>
 
@@ -49,7 +53,11 @@ function TopBar() {
 
                 <ColorModeSwitcher />
             </Center>
+
         </Flex>
+
+        <Divider orientation='horizontal'/>
+
     </ChakraProvider>
   );
 }

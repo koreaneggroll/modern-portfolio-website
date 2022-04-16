@@ -18,6 +18,10 @@ function App() {
       <Box className="TopBar">
             <TopBar />
       </Box>
+
+      <Box className="Main">
+          
+      </Box>
     </ChakraProvider>
   );
 }
