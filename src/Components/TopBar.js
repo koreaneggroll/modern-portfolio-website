@@ -42,7 +42,7 @@ function TopBar() {
             <Spacer/>
 
             <Center className="icons">
-                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
+                <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
                     {
                         //use icon button
                     }
@@ -50,17 +50,17 @@ function TopBar() {
                 </Circle>
 
 
-                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
+                <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
                     Icon
                 </Circle>
 
 
-                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
+                <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
                     Icon
                 </Circle>
 
 
-                <Circle _hover={{color: 'gray'}} mr={6} className="icon">
+                <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
                     Icon
                 </Circle>
 
