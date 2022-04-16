@@ -7,7 +7,8 @@ import {
   Spacer,
   Circle,
   Center,
-  Divider
+  Divider,
+  Text
 } from '@chakra-ui/react';
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
