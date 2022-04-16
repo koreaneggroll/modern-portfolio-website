@@ -25,6 +25,18 @@ function TopBar() {
                 Logo
             </Center>
 
+            <Center display={{base: 'none', md: 'flex', lg: 'flex'}} color="gray.600">
+                <Box ml={{base: '0', md: '2', lg: '20'}}>
+                    /
+                </Box>
+
+                <Box ml={{base: '0', md: '2', lg: '20'}}>
+                    <i>
+                        aringrigoras@gmail.com
+                    </i>
+                </Box>
+            </Center>
+
             <Spacer/>
 
             <Center className="icons">
