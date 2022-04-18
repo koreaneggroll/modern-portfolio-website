@@ -17,6 +17,8 @@ import { ChevronRightIcon, TriangleDownIcon } from '@chakra-ui/icons'
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
 import Loader from './Loader';
+import Aboutme from './AboutMe';
+import Main from './Main';
 import "../Css/Page.css";
 
 
@@ -27,14 +29,6 @@ import "../Css/Page.css";
 
 function Page() {
 
-    const aboutMeRef = useRef(null);
-
-    const gotoAboutMe = () => {
-        window.scrollTo({
-            top: aboutMeRef.current.offsetTop,
-            behavior: "smooth",
-        });
-    };
 
   return (
     <ChakraProvider theme={theme}>
@@ -94,39 +88,12 @@ function Page() {
         <Divider orientation='horizontal'/>
 
 
-        <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
-            <Box m={{base: '10', md: '20', lg: '40'}}>
-
-                <Text   fontSize={80} className="welcome-text-main">
-                    <b>I'M ARIN</b>
-                    <Text textDecoration='underline' ml={{base: '5', md: '10', lg: '20'}} fontSize={40}>
-                        SOFTWARE
-                    </Text>
-                    <Text textDecoration='underline' fontSize={40}>
-                        DEVELOPER
-                    </Text>
-                </Text>
-            </Box>
-
-            
+        <Flex className="main">
+            <Main />
         </Flex>
 
-        <Center>
-            <Flex mt={100} className="Welcome-bottom-side">
-                <Box className="Welcome-ScrollWheel">
-                    <IconButton onClick={gotoAboutMe} aria-label='Scroll WebPage' icon={<TriangleDownIcon />} />
-                </Box>
-            </Flex>
-        </Center>
-
         
-
-        <Divider mt={100} orientation='horizontal'/>
-
         
-        <Flex className="about-me" ref={aboutMeRef}>
-            About Me
-        </Flex>
 
 
     </ChakraProvider>
