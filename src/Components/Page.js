@@ -8,7 +8,8 @@ import {
   Circle,
   Center,
   Divider,
-  Text
+  Text,
+  Heading
 } from '@chakra-ui/react';
 
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -69,8 +70,23 @@ function Page() {
         <Divider orientation='horizontal'/>
 
 
-        <Flex className="Welcome">
-            <Text className="welcome-text"></Text>
+        <Flex className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
+            <Text className="welcome-text">
+                <Heading m={{base: '10', md: '20', lg: '40'}} fontSize={80}>
+                    I'M ARIN 
+                    <br/>
+                    <Heading fontSize={50}>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOFTWARE
+                        <br/>
+                        DEVELOPER
+                    </Heading>
+                </Heading>
+            </Text>
+        </Flex>
+
+
+        <Flex className="Welcome-right-side">
+        
         </Flex>
 
     </ChakraProvider>
