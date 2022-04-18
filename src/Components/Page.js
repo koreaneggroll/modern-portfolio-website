@@ -9,10 +9,10 @@ import {
   Center,
   Divider,
   Text,
-  Heading
+  IconButton
 } from '@chakra-ui/react';
 
-import { ChevronRightIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, TriangleDownIcon } from '@chakra-ui/icons'
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
@@ -71,22 +71,32 @@ function Page() {
 
 
         <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
-            <Text  m={{base: '10', md: '20', lg: '40'}} fontSize={80} className="welcome-text-main">
-                <b>I'M ARIN</b>
-                <Text textDecoration='underline' ml={{base: '5', md: '10', lg: '20'}} fontSize={40}>
-                    SOFTWARE
+            <Box m={{base: '10', md: '20', lg: '40'}}>
+
+                <Text   fontSize={80} className="welcome-text-main">
+                    <b>I'M ARIN</b>
+                    <Text textDecoration='underline' ml={{base: '5', md: '10', lg: '20'}} fontSize={40}>
+                        SOFTWARE
+                    </Text>
+                    <Text textDecoration='underline' fontSize={40}>
+                        DEVELOPER
+                    </Text>
                 </Text>
-                <Text textDecoration='underline' fontSize={40}>
-                    DEVELOPER
-                </Text>
-            </Text>
+            </Box>
+
             
         </Flex>
 
+        <Center>
+            <Flex mt={100} className="Welcome-bottom-side">
+                <Box className="Welcome-ScrollWheel">
+                    <IconButton aria-label='Scroll WebPage' icon={<TriangleDownIcon />} />
+                </Box>
+            </Flex>
+        </Center>
 
-        <Flex className="Welcome-right-side">
+
         
-        </Flex>
 
     </ChakraProvider>
   );
