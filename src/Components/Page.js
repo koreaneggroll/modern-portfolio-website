@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import {
   ChakraProvider,
   Box,
@@ -19,7 +19,23 @@ import { ColorModeSwitcher } from '../ColorModeSwitcher';
 import Loader from './Loader';
 import "../Css/Page.css";
 
+
+
+
+
+
+
 function Page() {
+
+    const aboutMeRef = useRef(null);
+
+    const gotoAboutMe = () => {
+        window.scrollTo({
+            top: aboutMeRef.current.offsetTop,
+            behavior: "smooth",
+        });
+    };
+
   return (
     <ChakraProvider theme={theme}>
 
@@ -98,16 +114,18 @@ function Page() {
         <Center>
             <Flex mt={100} className="Welcome-bottom-side">
                 <Box className="Welcome-ScrollWheel">
-                    <IconButton aria-label='Scroll WebPage' icon={<TriangleDownIcon />} />
+                    <IconButton onClick={gotoAboutMe} aria-label='Scroll WebPage' icon={<TriangleDownIcon />} />
                 </Box>
             </Flex>
         </Center>
 
         
-        <Flex className="Pages-Buttons">
-            <Box className="buttons">
-                
-            </Box>
+
+        <Divider mt={100} orientation='horizontal'/>
+
+        
+        <Flex className="about-me" ref={aboutMeRef}>
+            About Me
         </Flex>
 
 
