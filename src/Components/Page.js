@@ -16,9 +16,17 @@ import { ChevronRightIcon, TriangleDownIcon } from '@chakra-ui/icons'
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
+import Loader from './Loader';
+import "../Css/Page.css";
+
 function Page() {
   return (
     <ChakraProvider theme={theme}>
+
+        {
+        //<Loader />
+        }   
+
         <Flex className="topbar" m={6} >
             <Center className="logo">
                 Logo
@@ -95,8 +103,13 @@ function Page() {
             </Flex>
         </Center>
 
-
         
+        <Flex className="Pages-Buttons">
+            <Box className="buttons">
+                
+            </Box>
+        </Flex>
+
 
     </ChakraProvider>
   );
