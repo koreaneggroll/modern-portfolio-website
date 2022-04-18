@@ -70,18 +70,17 @@ function Page() {
         <Divider orientation='horizontal'/>
 
 
-        <Flex className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
-            <Text className="welcome-text">
-                <Heading m={{base: '10', md: '20', lg: '40'}} fontSize={80}>
-                    I'M ARIN 
-                    <br/>
-                    <Heading fontSize={50}>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SOFTWARE
-                        <br/>
-                        DEVELOPER
-                    </Heading>
-                </Heading>
+        <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
+            <Text  m={{base: '10', md: '20', lg: '40'}} fontSize={80} className="welcome-text-main">
+                <b>I'M ARIN</b>
+                <Text textDecoration='underline' ml={{base: '5', md: '10', lg: '20'}} fontSize={40}>
+                    SOFTWARE
+                </Text>
+                <Text textDecoration='underline' fontSize={40}>
+                    DEVELOPER
+                </Text>
             </Text>
+            
         </Flex>
 
 
