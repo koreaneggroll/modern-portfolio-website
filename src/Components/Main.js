@@ -7,6 +7,8 @@ import Aboutme from './AboutMe';
 import { TriangleDownIcon } from '@chakra-ui/icons';
 
 
+import "../Css/Main.css";
+
 
 function Main(){
 
@@ -49,7 +51,6 @@ function Main(){
 
             
 
-            <Divider mt={100} orientation='horizontal'/>
 
             <Flex className="about-me" ref={aboutMeRef}>
                 <Aboutme />

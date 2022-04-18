@@ -1,11 +1,7 @@
-.topbar{
-    opacity: 0.7;
-}
-
-
-.main{
+.Main{
     background: url("../Pictures/main-page.svg");
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
+    width: max-content;
 }
