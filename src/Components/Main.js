@@ -18,7 +18,9 @@ import {
     DrawerContent,
     DrawerCloseButton,
     useDisclosure, 
-    Button
+    Button,
+    VStack,
+    Hide
 } from '@chakra-ui/react';
 import Aboutme from './AboutMe';
 
@@ -86,14 +88,18 @@ function Main(){
 
 
                                     <DrawerBody>
-                                        Text...
+                                        <VStack>
+
+                                        </VStack>
                                     </DrawerBody>
 
 
                                     <DrawerFooter>
-                                        <Button variant='outline' onClick={onClose}>
-                                            Cancel
-                                        </Button>
+                                        <Hide below='md'>
+                                            <Button  variant='outline' onClick={onClose}>
+                                                Cancel
+                                            </Button>
+                                        </Hide>
                                     </DrawerFooter>
 
                                 </DrawerContent>
