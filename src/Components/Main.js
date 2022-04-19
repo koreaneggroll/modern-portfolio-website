@@ -1,10 +1,27 @@
 import React, { useRef } from 'react';
 
 
-import { Box, Flex, IconButton, Circle, Center, Text, Divider, Show } from '@chakra-ui/react';
+import { 
+    Box, 
+    Flex, 
+    IconButton, 
+    Circle, 
+    Center, 
+    Text, 
+    Divider, 
+    Show,
+    Drawer,
+    DrawerBody,
+    DrawerFooter,
+    DrawerHeader,
+    DrawerOverlay,
+    DrawerContent,
+    DrawerCloseButton,
+    useDisclosure, 
+} from '@chakra-ui/react';
 import Aboutme from './AboutMe';
 
-import { TriangleDownIcon } from '@chakra-ui/icons';
+import { ArrowRightIcon, TriangleDownIcon } from '@chakra-ui/icons';
 
 
 import "../Css/Main.css";
@@ -12,15 +29,8 @@ import "../Css/Main.css";
 
 function Main(){
 
-
-    const aboutMeRef = useRef(null);
-
-    const gotoAboutMe = () => {
-        window.scrollTo({
-            top: aboutMeRef.current.offsetTop,
-            behavior: "smooth",
-        });
-    };
+    const { isOpen, onOpen, onClose } = useDisclosure();
+    const btnRef = useRef();
 
     return(
         <Box className="Main">
@@ -44,19 +54,36 @@ function Main(){
                 </Flex>
 
                 <Center>
-                    <Flex mt={140} mb={10} className="Welcome-bottom-side">
-                        <Box className="Welcome-ScrollWheel">
-                            <IconButton isRound={true} onClick={gotoAboutMe} aria-label='Scroll WebPage' icon={<TriangleDownIcon />} />
+                    <Flex mt={130} mb={10} className="Welcome-bottom-side">
+                        <Box className="Welcome-DrawerButton">
+                            <IconButton
+                             isRound={true} 
+                             onClick={onOpen}  
+                             aria-label='OpenDrawer' 
+                             icon={<ArrowRightIcon />} 
+                             ref={btnRef}
+                             />                               
+
+                            <Drawer
+                                isOpen={isOpen}
+                                placement="left"
+                                onClose={onClose}
+                                finalFocusRef={btnRef}
+                                closeOnEsc={true}
+                                closeOnOverlayClick={true}
+                            >
+                                
+                                <DrawerOverlay />
+                                <DrawerContent>
+
+                                </DrawerContent>
+
+                            </Drawer>
                         </Box>
                     </Flex>
                 </Center>
 
             </Box>
-
-
-            <Flex ref={aboutMeRef} className="About-me">
-                <Aboutme />
-            </Flex>
 
 
         </Box>
