@@ -44,7 +44,7 @@ function Main(){
             <Center>
                 <Flex mt={100} className="Welcome-bottom-side">
                     <Box className="Welcome-ScrollWheel">
-                        <IconButton onClick={gotoAboutMe} aria-label='Scroll WebPage' icon={<TriangleDownIcon />} />
+                        <IconButton isRound={true} onClick={gotoAboutMe} aria-label='Scroll WebPage' icon={<TriangleDownIcon />} />
                     </Box>
                 </Flex>
             </Center>
