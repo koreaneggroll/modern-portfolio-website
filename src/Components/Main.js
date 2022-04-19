@@ -1,15 +1,15 @@
 import React, { useRef } from 'react';
 
 
+import { Outlet, Link } from "react-router-dom";
+
 import { 
     Box, 
     Flex, 
-    IconButton, 
-    Circle, 
+    IconButton,  
     Center, 
     Text, 
     Divider, 
-    Show,
     Drawer,
     DrawerBody,
     DrawerFooter,
@@ -24,8 +24,7 @@ import {
     Heading,
     Badge,
     UnorderedList,
-    List,
-    ListItem
+    ListItem,
 } from '@chakra-ui/react';
 import Aboutme from './AboutMe';
 
@@ -40,6 +39,10 @@ function Main(){
 
     const { isOpen, onOpen, onClose } = useDisclosure();
     const btnRef = useRef();
+
+
+    
+
 
     return(
         <Box className="Main">
@@ -99,56 +102,60 @@ function Main(){
 
                                             <UnorderedList spacing={4}>
                                                 <ListItem>
-                                                    <Box
-                                                        className="drawer-box"
-                                                        maxW='sm'
-                                                        borderWidth='1px'
-                                                        borderRadius='lg'
-                                                        overflow="hidden"
-                                                        as='button'
-                                                        h={{base: '90', md: '95', lg: '100'}}
-                                                        w={{base: '90', md: '95', lg: '100'}}
-                                                    >
+                                                    <Link to="/about-me">
+                                                        <Box
+                                                            className="drawer-box"
+                                                            maxW='sm'
+                                                            borderWidth='1px'
+                                                            borderRadius='lg'
+                                                            overflow="hidden"
+                                                            as='button'
+                                                            h={{base: '90', md: '95', lg: '100'}}
+                                                            w={{base: '90', md: '95', lg: '100'}}
+                                                        >
 
-                                                        <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
-                                                            <Heading ml={-5} fontSize={20} className="drawer-heading">
-                                                                About me
-                                                                <Badge ml={2} colorScheme='purple'>Interesting</Badge>
-                                                            </Heading>
+                                                            <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
+                                                                <Heading ml={-5} fontSize={20} className="drawer-heading">
+                                                                    About me
+                                                                    <Badge ml={2} colorScheme='purple'>Interesting</Badge>
+                                                                </Heading>
 
 
-                                                            <Text color='gray.500' className="drawer-paragraph">
-                                                                Learn more about me!
+                                                                <Text color='gray.500' className="drawer-paragraph">
+                                                                    Learn more about me!
+                                                                </Text>
                                                             </Text>
-                                                        </Text>
-                                                    </Box>
+                                                        </Box>
+                                                    </Link>
                                                 </ListItem>
 
                                                 <ListItem>
-                                                    <Box 
-                                                    className="drawer-box"
-                                                        maxW='sm'
-                                                        borderWidth='1px'
-                                                        borderRadius='lg'
-                                                        overflow="hidden"
-                                                        as="button"
-                                                        h={{base: '90', md: '95', lg: '100'}}
-                                                        w={{base: '90', md: '95', lg: '100'}}
-                                                        >
+                                                    <Link to="/projects">
+                                                        <Box 
+                                                        className="drawer-box"
+                                                            maxW='sm'
+                                                            borderWidth='1px'
+                                                            borderRadius='lg'
+                                                            overflow="hidden"
+                                                            as="button"
+                                                            h={{base: '90', md: '95', lg: '100'}}
+                                                            w={{base: '90', md: '95', lg: '100'}}
+                                                            >
 
-                                                        <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
-                                                            <Heading ml={-5} fontSize={20} className="drawer-heading">
-                                                                Projects
-                                                                <Badge ml={2} colorScheme='yellow'>Interesting</Badge>
-                                                            </Heading>
+                                                            <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
+                                                                <Heading ml={-5} fontSize={20} className="drawer-heading">
+                                                                    Projects
+                                                                    <Badge ml={2} colorScheme='yellow'>Interesting</Badge>
+                                                                </Heading>
 
 
-                                                            <Text color='gray.500' className="drawer-paragraph">
-                                                                Some of them are cool
+                                                                <Text color='gray.500' className="drawer-paragraph">
+                                                                    Some of them are cool
+                                                                </Text>
                                                             </Text>
-                                                        </Text>
 
-                                                    </Box>
+                                                        </Box>
+                                                    </Link>
                                                 </ListItem>
 
                                             </UnorderedList>
@@ -174,6 +181,7 @@ function Main(){
             </Box>
 
 
+            <Outlet />
         </Box>
     );
 }

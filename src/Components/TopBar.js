@@ -10,7 +10,7 @@ import {
   } from '@chakra-ui/react';
 
 
-import { ChevronRightIcon, TriangleDownIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 

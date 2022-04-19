@@ -3,14 +3,22 @@ import {
   ChakraProvider,
   theme,
 } from '@chakra-ui/react';
-import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Page from './Components/Page';
-import Aboutme from './Components/AboutMe';
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+import AboutMe from './Components/AboutMe';
 
 function App() {
   return (
     <ChakraProvider className="App" theme={theme}>
-      <Page />
+      <BrowserRouter>
+        <Routes>
+            <Route path="/" element={<Page />}/>
+            <Route path="/about-me" element={<AboutMe/>}/>
+        </Routes>
+      </BrowserRouter>
     </ChakraProvider>
   );
 }

@@ -20,7 +20,7 @@ function Aboutme(){
     return(
         <Box className="about-me">
             
-            
+            about me
             
         </Box>
     );
