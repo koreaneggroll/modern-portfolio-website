@@ -139,7 +139,7 @@ function Main(){
                                                         <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
                                                             <Heading ml={-5} fontSize={20} className="drawer-heading">
                                                                 Projects
-                                                                <Badge ml={2} colorScheme='purple'>Interesting</Badge>
+                                                                <Badge ml={2} colorScheme='yellow'>Interesting</Badge>
                                                             </Heading>
 
 
