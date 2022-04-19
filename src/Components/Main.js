@@ -23,6 +23,7 @@ import {
 import Aboutme from './AboutMe';
 
 import { ArrowRightIcon, TriangleDownIcon } from '@chakra-ui/icons';
+import Emoji from '../Custom/Emoji';
 
 
 import "../Css/Main.css";
@@ -79,7 +80,8 @@ function Main(){
                                     <DrawerCloseButton />
 
                                     <DrawerHeader>
-                                        Explore
+                                        Explore &nbsp;
+                                        <Emoji symbol="😎" />
                                     </DrawerHeader>
 
 
