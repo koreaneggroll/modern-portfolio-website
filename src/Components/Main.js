@@ -20,7 +20,12 @@ import {
     useDisclosure, 
     Button,
     VStack,
-    Hide
+    Hide,
+    Heading,
+    Badge,
+    UnorderedList,
+    List,
+    ListItem
 } from '@chakra-ui/react';
 import Aboutme from './AboutMe';
 
@@ -86,10 +91,67 @@ function Main(){
                                         <Emoji symbol="😎" />
                                     </DrawerHeader>
 
+                                    <Divider orientation="horizontal"/>
+
 
                                     <DrawerBody>
-                                        <VStack>
+                                        <VStack mt={10}>
 
+                                            <UnorderedList spacing={4}>
+                                                <ListItem>
+                                                    <Box
+                                                        className="drawer-box"
+                                                        maxW='sm'
+                                                        borderWidth='1px'
+                                                        borderRadius='lg'
+                                                        overflow="hidden"
+                                                        as='button'
+                                                        h={{base: '90', md: '95', lg: '100'}}
+                                                        w={{base: '90', md: '95', lg: '100'}}
+                                                    >
+
+                                                        <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
+                                                            <Heading ml={-5} fontSize={20} className="drawer-heading">
+                                                                About me
+                                                                <Badge ml={2} colorScheme='purple'>Interesting</Badge>
+                                                            </Heading>
+
+
+                                                            <Text color='gray.500' className="drawer-paragraph">
+                                                                Learn more about me!
+                                                            </Text>
+                                                        </Text>
+                                                    </Box>
+                                                </ListItem>
+
+                                                <ListItem>
+                                                    <Box 
+                                                    className="drawer-box"
+                                                        maxW='sm'
+                                                        borderWidth='1px'
+                                                        borderRadius='lg'
+                                                        overflow="hidden"
+                                                        as="button"
+                                                        h={{base: '90', md: '95', lg: '100'}}
+                                                        w={{base: '90', md: '95', lg: '100'}}
+                                                        >
+
+                                                        <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
+                                                            <Heading ml={-5} fontSize={20} className="drawer-heading">
+                                                                Projects
+                                                                <Badge ml={2} colorScheme='purple'>Interesting</Badge>
+                                                            </Heading>
+
+
+                                                            <Text color='gray.500' className="drawer-paragraph">
+                                                                Some of them are cool
+                                                            </Text>
+                                                        </Text>
+
+                                                    </Box>
+                                                </ListItem>
+
+                                            </UnorderedList>
                                         </VStack>
                                     </DrawerBody>
 
