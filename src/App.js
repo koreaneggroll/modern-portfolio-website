@@ -5,6 +5,7 @@ import {
 } from '@chakra-ui/react';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 import Page from './Components/Page';
+import Aboutme from './Components/AboutMe';
 
 function App() {
   return (

@@ -14,10 +14,14 @@ import {
   } from '@chakra-ui/react';
 
 
+import "../Css/AboutMe.css";
+
 function Aboutme(){
     return(
         <Box className="about-me">
-            about me
+            
+            
+            
         </Box>
     );
 }
