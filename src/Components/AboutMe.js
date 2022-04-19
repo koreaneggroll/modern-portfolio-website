@@ -10,19 +10,38 @@ import {
     Center,
     Divider,
     Text,
-    IconButton
-  } from '@chakra-ui/react';
+    IconButton,
+    Heading
+} from '@chakra-ui/react';
 
 
 import "../Css/AboutMe.css";
 
+import TopBar from './TopBar';
+
+import AboutmeSVG from '../Pictures/about-page.svg';
+
+
 function Aboutme(){
     return(
-        <Box className="about-me">
-            
-            about me
-            
-        </Box>
+        <ChakraProvider theme={theme}>
+            <Box className="about-me">
+                <div className="topbar">
+                    <TopBar/>
+                </div>
+
+
+                <div className="main-about-me">
+                    <Box className="about-me-wrapper">
+                        <Box mt={{base: '20', md: '30', lg: '40'}} display={{base: 'block', md: 'flex', lg: 'flex'}} className="about-me-heading">
+                            <Heading fontSize={100}>
+                                ABOUT ME
+                            </Heading>
+                        </Box>
+                    </Box>
+                </div>
+            </Box>
+        </ChakraProvider>
     );
 }
 

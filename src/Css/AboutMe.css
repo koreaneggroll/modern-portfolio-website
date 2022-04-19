@@ -1,3 +1,11 @@
 .about-me{
-    background-color:azure
+    background: url("../Pictures/about-page.svg");
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+.topbar{
+    z-index: 2;
 }
