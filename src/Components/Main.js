@@ -18,6 +18,7 @@ import {
     DrawerContent,
     DrawerCloseButton,
     useDisclosure, 
+    Button
 } from '@chakra-ui/react';
 import Aboutme from './AboutMe';
 
@@ -75,6 +76,23 @@ function Main(){
                                 
                                 <DrawerOverlay />
                                 <DrawerContent>
+                                    <DrawerCloseButton />
+
+                                    <DrawerHeader>
+                                        Explore
+                                    </DrawerHeader>
+
+
+                                    <DrawerBody>
+                                        Text...
+                                    </DrawerBody>
+
+
+                                    <DrawerFooter>
+                                        <Button variant='outline' onClick={onClose}>
+                                            Cancel
+                                        </Button>
+                                    </DrawerFooter>
 
                                 </DrawerContent>
 
