@@ -178,12 +178,52 @@ function Aboutme(){
 
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <UnlockIcon color="royalblue" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Using Open-Source <Emoji symbol="🤓" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I have been able to use Git since really early in my programming journey, hence I am comfortable using it
+                                                together with GitHub to efficiently share my software with the world.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
 
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <UnlockIcon color="royalblue" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Using Open-Source <Emoji symbol="🤓" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I have been able to use Git since really early in my programming journey, hence I am comfortable using it
+                                                together with GitHub to efficiently share my software with the world.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
                                 
                             </Grid>
@@ -198,22 +238,102 @@ function Aboutme(){
                             <Grid className="attributes" gap={{base: '60', md: '20'}} templateColumns='repeat(2, 2fr)'>
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <UnlockIcon color="royalblue" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Using Open-Source <Emoji symbol="🤓" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I have been able to use Git since really early in my programming journey, hence I am comfortable using it
+                                                together with GitHub to efficiently share my software with the world.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
 
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <UnlockIcon color="royalblue" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Using Open-Source <Emoji symbol="🤓" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I have been able to use Git since really early in my programming journey, hence I am comfortable using it
+                                                together with GitHub to efficiently share my software with the world.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
 
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <UnlockIcon color="royalblue" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Using Open-Source <Emoji symbol="🤓" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I have been able to use Git since really early in my programming journey, hence I am comfortable using it
+                                                together with GitHub to efficiently share my software with the world.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
 
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <UnlockIcon color="royalblue" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Using Open-Source <Emoji symbol="🤓" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I have been able to use Git since really early in my programming journey, hence I am comfortable using it
+                                                together with GitHub to efficiently share my software with the world.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
 
                             </Grid>
