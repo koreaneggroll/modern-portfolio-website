@@ -11,9 +11,10 @@ import {
     Divider,
     Text,
     IconButton,
-    Heading,
     Show,
-    Hide
+    Hide,
+    Grid,
+    GridItem
 } from '@chakra-ui/react';
 
 
@@ -23,7 +24,7 @@ import TopBar from './TopBar';
 
 import AboutmeSVG from '../Pictures/about-page.svg';
 
-import { ArrowRightIcon, ChevronDownIcon } from '@chakra-ui/icons';
+import { ArrowRightIcon, ChevronDownIcon, ChatIcon, CalendarIcon } from '@chakra-ui/icons';
 
 
 function Aboutme(){
@@ -103,6 +104,34 @@ function Aboutme(){
                         }
                         About
                     </Text>
+
+                </Center>
+
+                <Center>
+                    <Box mt={20} className="quick-overview-of-attributes">
+                        <Grid display={{base: 'block', md: 'flex', lg: 'flex'}} gap={10}>
+
+                            <GridItem className="attribute-grid-item">
+                                <ChatIcon />
+                            </GridItem>
+
+
+                            <GridItem className="attribute-grid-item">
+                                <ChatIcon />
+                            </GridItem>
+
+
+                            <GridItem className="attribute-grid-item">
+                                <ChatIcon />
+                            </GridItem>
+
+
+                            <GridItem className="attribute-grid-item">
+                                <ChatIcon />
+                            </GridItem>
+                            
+                        </Grid>
+                    </Box>
                 </Center>
 
 
