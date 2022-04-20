@@ -23,7 +23,9 @@ import {
     PopoverFooter,
     PopoverArrow,
     PopoverCloseButton,
-    PopoverAnchor
+    PopoverAnchor,
+    Avatar,
+    AvatarBadge
 } from '@chakra-ui/react';
 
 
@@ -36,6 +38,9 @@ import AboutmeSVG from '../Pictures/about-page.svg';
 import { ArrowRightIcon, ChevronDownIcon, ChatIcon, UnlockIcon } from '@chakra-ui/icons';
 
 import Emoji from '../Custom/Emoji';
+
+
+import ArinLogo from "../Pictures/arin-logo.png";
 
 
 function Aboutme(){
@@ -341,6 +346,37 @@ function Aboutme(){
                     </Center>
                 </Show>
 
+
+
+                <Divider mt={20} />
+
+
+
+                <Center>
+                    <Box mr={{base: '0', md: '600', lg: '700'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
+                        <Box className="about-me-avatar">
+                            <Avatar
+                             name="Arin Grigoras" 
+                             src={ArinLogo}
+                             size='3xl'
+                             loading="eager"
+                             showBorder={true}
+                             borderWidth='2px'
+                             borderColor='blue.900'
+                             >
+                                
+                            </Avatar>
+                        </Box>
+
+                        <Box className="about-me-transition-avatar-paragraph>
+                            
+                        </Box>
+
+                        <Box className="about-me-paragraph>
+                            
+                        </Box>
+                    </Box>
+                </Center>
 
                 
             </Box>
