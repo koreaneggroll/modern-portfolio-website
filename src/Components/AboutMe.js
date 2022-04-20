@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 import {
     ChakraProvider,
@@ -14,7 +14,16 @@ import {
     Show,
     Hide,
     Grid,
-    GridItem
+    GridItem,
+    Popover,
+    PopoverTrigger,
+    PopoverContent,
+    PopoverHeader,
+    PopoverBody,
+    PopoverFooter,
+    PopoverArrow,
+    PopoverCloseButton,
+    PopoverAnchor
 } from '@chakra-ui/react';
 
 
@@ -24,10 +33,15 @@ import TopBar from './TopBar';
 
 import AboutmeSVG from '../Pictures/about-page.svg';
 
-import { ArrowRightIcon, ChevronDownIcon, ChatIcon, CalendarIcon } from '@chakra-ui/icons';
+import { ArrowRightIcon, ChevronDownIcon, ChatIcon, UnlockIcon } from '@chakra-ui/icons';
+
+import Emoji from '../Custom/Emoji';
 
 
 function Aboutme(){
+
+    
+
     return(
         <ChakraProvider theme={theme}>
             <Box className="about-me">
@@ -115,12 +129,51 @@ function Aboutme(){
                             <Grid className="attributes" display='flex' gap={{base: '20', md: '20', lg: '60'}}>
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <ChatIcon color="aqua" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Communicative <Emoji symbol="😌" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I can communicate with other people and share ideas efficiently.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
 
 
                                 <GridItem className="attribute-grid-item">
-                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                    <Popover>
+                                        <PopoverTrigger>
+                                            <Box className="grid-button" as="button">
+                                                <UnlockIcon color="royalblue" focusable={true} fontSize='50' className="grid-item-icon" />
+                                            </Box>
+                                        </PopoverTrigger>
+
+                                        <PopoverContent>
+                                            <PopoverArrow />
+                                            <PopoverCloseButton />
+
+                                            <PopoverHeader>
+                                                Using Open-Source <Emoji symbol="🤓" />
+                                            </PopoverHeader>
+
+                                            <PopoverBody>
+                                                I have been able to use Git since really early in my programming journey, hence I am comfortable using it
+                                                together with GitHub to efficiently share my software with the world.
+                                            </PopoverBody>
+                                        </PopoverContent>
+                                    </Popover>
                                 </GridItem>
 
 
