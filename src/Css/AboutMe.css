@@ -1,11 +1,13 @@
 .about-me{
     background: url("../Pictures/about-page.svg");
-    background-attachment: scroll;
-    background-size: cover;
+    background-attachment: fixed;
+    /*for now*/
+    background-size: 0%;
     background-repeat: no-repeat;
-    z-index: 1;
+    
 }
 
+
 .topbar{
-    z-index: 2;
+    z-index: 9999;
 }

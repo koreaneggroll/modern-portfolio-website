@@ -21,11 +21,14 @@ import TopBar from './TopBar';
 
 import AboutmeSVG from '../Pictures/about-page.svg';
 
+import { ArrowRightIcon } from '@chakra-ui/icons';
+
 
 function Aboutme(){
     return(
         <ChakraProvider theme={theme}>
             <Box className="about-me">
+
                 <div className="topbar">
                     <TopBar/>
                 </div>
@@ -34,12 +37,27 @@ function Aboutme(){
                 <div className="main-about-me">
                     <Box className="about-me-wrapper">
                         <Box mt={{base: '20', md: '30', lg: '40'}} display={{base: 'block', md: 'flex', lg: 'flex'}} className="about-me-heading">
-                            <Heading fontSize={100}>
-                                ABOUT ME
-                            </Heading>
+                            <Box  ml={{base: '20', md: '10', lg: '10'}}>
+                                <Text display={{base: 'block', md: 'flex', lg: 'flex'}} fontSize={{base: '80', md: '80', lg: '80'}}>
+                                    <b>
+                                        <Text>
+                                            ABOUT
+                                        </Text>
+
+                                        <Text ml={{base: '6', md: '8', lg: '10'}}>
+                                            ME
+                                        </Text>
+                                    </b>
+                                </Text>
+                                
+                            </Box>
                         </Box>
                     </Box>
                 </div>
+
+
+
+                
             </Box>
         </ChakraProvider>
     );
