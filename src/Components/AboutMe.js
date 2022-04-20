@@ -11,7 +11,9 @@ import {
     Divider,
     Text,
     IconButton,
-    Heading
+    Heading,
+    Show,
+    Hide
 } from '@chakra-ui/react';
 
 
@@ -38,7 +40,7 @@ function Aboutme(){
                     <Box className="about-me-wrapper">
                         <Box mt={{base: '20', md: '30', lg: '40'}} display={{base: 'block', md: 'flex', lg: 'flex'}} className="about-me-heading">
                             <Box  ml={{base: '20', md: '10', lg: '10'}}>
-                                <Text display={{base: 'block', md: 'flex', lg: 'flex'}} fontSize={{base: '80', md: '80', lg: '80'}}>
+                                <Text display={{base: 'block', md: 'flex', lg: 'flex'}} fontSize={{base: '80', md: '80', lg: '100'}}>
                                     <b>
                                         <Text>
                                             ABOUT
@@ -51,7 +53,24 @@ function Aboutme(){
                                 </Text>
                                 
                             </Box>
+
+                            <Show below='sm'>
+                                <Center>
+                                    <Box mt={5} className="about-me-arrow-right">
+                                        <ArrowRightIcon fontSize={30} />
+                                    </Box>
+                                </Center>
+                            </Show>
+
+
+                            <Show above='sm'>
+                                <Box mt={{ md: '36', lg: '36'}} className="about-me-arrow-right">
+                                    <ArrowRightIcon fontSize={40} />
+                                </Box>
+                            </Show>
                         </Box>
+
+                        
                     </Box>
                 </div>
 
