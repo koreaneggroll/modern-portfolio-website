@@ -107,32 +107,66 @@ function Aboutme(){
 
                 </Center>
 
-                <Center>
-                    <Box mt={20} className="quick-overview-of-attributes">
-                        <Grid display={{base: 'block', md: 'flex', lg: 'flex'}} gap={10}>
 
-                            <GridItem className="attribute-grid-item">
-                                <ChatIcon />
-                            </GridItem>
-
-
-                            <GridItem className="attribute-grid-item">
-                                <ChatIcon />
-                            </GridItem>
-
-
-                            <GridItem className="attribute-grid-item">
-                                <ChatIcon />
-                            </GridItem>
-
-
-                            <GridItem className="attribute-grid-item">
-                                <ChatIcon />
-                            </GridItem>
+                <Hide below="sm">
+                    <Center>
+                        <Box mt={20} className="quick-overview-of-attributes">
                             
-                        </Grid>
-                    </Box>
-                </Center>
+                            <Grid className="attributes" display='flex' gap={{base: '20', md: '20', lg: '60'}}>
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+                                
+                            </Grid>
+                        </Box>
+                    </Center>
+                </Hide>
+
+
+                <Show below="sm">
+                    <Center>
+                        <Box mt={20} className="quick-overview-of-attributes">
+                            <Grid className="attributes" gap={{base: '60', md: '20'}} templateColumns='repeat(2, 2fr)'>
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+
+
+                                <GridItem className="attribute-grid-item">
+                                    <ChatIcon fontSize='50' className="grid-item-icon" />
+                                </GridItem>
+
+                            </Grid>
+                        </Box>
+                    </Center>
+                </Show>
 
 
                 
