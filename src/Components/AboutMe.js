@@ -4,13 +4,9 @@ import {
     ChakraProvider,
     Box,
     theme,
-    Flex,
-    Spacer,
-    Circle,
     Center,
     Divider,
     Text,
-    IconButton,
     Show,
     Hide,
     Grid,
@@ -20,12 +16,9 @@ import {
     PopoverContent,
     PopoverHeader,
     PopoverBody,
-    PopoverFooter,
     PopoverArrow,
     PopoverCloseButton,
-    PopoverAnchor,
     Avatar,
-    AvatarBadge
 } from '@chakra-ui/react';
 
 
@@ -35,7 +28,7 @@ import TopBar from './TopBar';
 
 import AboutmeSVG from '../Pictures/about-page.svg';
 
-import { ArrowRightIcon, ChevronDownIcon, ChatIcon, UnlockIcon } from '@chakra-ui/icons';
+import { ChevronDownIcon, ChatIcon, UnlockIcon } from '@chakra-ui/icons';
 
 import Emoji from '../Custom/Emoji';
 
@@ -383,6 +376,14 @@ function Aboutme(){
                                 </Text>
                             </Center>
 
+                        </Box>
+                    </Box>
+
+
+
+                    <Box className="about-me-profficiency">
+                        <Box className="profficiency-wrapper">
+                            
                         </Box>
                     </Box>
                 </Center>
