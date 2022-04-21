@@ -30,7 +30,7 @@ import AboutmeSVG from '../Pictures/about-page.svg';
 
 import { ChevronDownIcon, ChatIcon, UnlockIcon } from '@chakra-ui/icons';
 
-import Emoji from '../Custom/Emoji';
+import Emoji from './Custom/Emoji';
 
 
 import ArinLogo from "../Pictures/arin-logo.png";
