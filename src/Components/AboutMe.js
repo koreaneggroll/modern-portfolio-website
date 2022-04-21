@@ -361,19 +361,28 @@ function Aboutme(){
                              size='3xl'
                              loading="eager"
                              showBorder={true}
-                             borderWidth='2px'
+                             borderWidth='5px'
                              borderColor='blue.900'
                              >
                                 
                             </Avatar>
                         </Box>
 
-                        <Box className="about-me-transition-avatar-paragraph>
-                            
+                        <Box className="about-me-transition-avatar-paragraph">
+                            <Center>
+                                <ChevronDownIcon color="gray.500" fontSize={40} mt={15} />
+                            </Center>
                         </Box>
 
-                        <Box className="about-me-paragraph>
-                            
+                        <Box display="block" position="relative" align='center' className="about-me-paragraph" maxW={400}>
+                            <Center>
+                                <Text>
+                                    I'm a Software-Developer working as a Freelancer in Romania.
+                                    I have a whole bunch of passion for software and I wish to
+                                    be able to spread the joy with others aswell.
+                                </Text>
+                            </Center>
+
                         </Box>
                     </Box>
                 </Center>

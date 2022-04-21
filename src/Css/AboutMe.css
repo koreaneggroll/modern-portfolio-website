@@ -11,3 +11,11 @@
 .topbar{
     z-index: 9999;
 }
+
+.about-me-avatar{
+    position:unset
+}
+
+.about-me-paragraph{
+    padding: 70px 0 70px 0;
+}
