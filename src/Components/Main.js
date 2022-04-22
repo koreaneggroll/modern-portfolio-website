@@ -25,6 +25,7 @@ import {
     Badge,
     UnorderedList,
     ListItem,
+    Show,
 } from '@chakra-ui/react';
 import Aboutme from './AboutMe';
 
@@ -48,22 +49,45 @@ function Main(){
         <Box className="Main">
 
             <Box className="main-page">
-                <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
-                    <Box m={{base: '10', md: '20', lg: '40'}}>
 
-                        <Text   fontSize={80} className="welcome-text-main">
-                            <b>I'm Arin</b>
-                            <Text textDecoration='underline' ml={{base: '10', md: '20', lg: '40'}} fontSize={50}>
-                                Software
-                            </Text>
-                            <Text textDecoration='underline' fontSize={50}>
-                                Developer
-                            </Text>
-                        </Text>
-                    </Box>
+                <Show above="sm">
+                    <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
+                        <Box m={{base: '10', md: '20', lg: '40'}}>
 
-                
-                </Flex>
+                            <Text   fontSize={80} className="welcome-text-main">
+                                <b>I'm Arin</b>
+                                <Text textDecoration='underline' ml={{base: '10', md: '20', lg: '40'}} fontSize={50}>
+                                    Software
+                                </Text>
+                                <Text textDecoration='underline' fontSize={50}>
+                                    Developer
+                                </Text>
+                            </Text>
+                        </Box>
+
+                    
+                    </Flex>
+                </Show>
+
+
+                <Show below="sm">
+                    <Center>
+                        <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
+                            <Box m={{base: '10', md: '20', lg: '40'}}>
+
+                                <Text   fontSize={80} className="welcome-text-main">
+                                    <b>I'm Arin</b>
+                                    <Text textDecoration='underline' ml={{base: '10', md: '20', lg: '40'}} fontSize={50}>
+                                        Software
+                                    </Text>
+                                    <Text textDecoration='underline' fontSize={50}>
+                                        Developer
+                                    </Text>
+                                </Text>
+                            </Box>
+                        </Flex>
+                    </Center>
+                </Show>
 
                 <Center>
                     <Flex mt={130} mb={10} className="Welcome-bottom-side">

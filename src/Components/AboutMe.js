@@ -370,7 +370,7 @@ function Aboutme(){
                         <Box display="block" position="relative" align='center' className="about-me-paragraph" maxW={400}>
                             <Center>
                                 <Text>
-                                    I'm a Software-Developer working as a Freelancer in Romania.
+                                    I'm a Software-Developer working as a Freelancer.
                                     I have a whole bunch of passion for software and I wish to
                                     be able to spread the joy with others aswell.
                                 </Text>
