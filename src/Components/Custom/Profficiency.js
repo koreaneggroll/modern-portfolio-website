@@ -16,13 +16,14 @@ import "../../Css/Profficiency.css"
 function Profficiency(props){
     return(
         <>
-            <Box className="profficiency-wrapper">
+            <Box display={{base: 'block', md: 'flex', lg: 'flex'}} className="profficiency-wrapper">
                 <Box className="profficiency">
                     <VStack 
                         align='stretch'
                         spacing={10}
                         className="profficiency-stack"
                         maxW={400}
+                        display={{base: 'block', md: 'flex', lg: 'flex'}}
                     >
 
                         <Center h='40px' bg="twitter.500" className="language-profficiency">
