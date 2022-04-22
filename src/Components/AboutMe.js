@@ -25,6 +25,7 @@ import {
 import "../Css/AboutMe.css";
 
 import TopBar from './TopBar';
+import Profficiency from './Custom/Profficiency';
 
 import AboutmeSVG from '../Pictures/about-page.svg';
 
@@ -383,7 +384,7 @@ function Aboutme(){
 
                     <Box className="about-me-profficiency">
                         <Box className="profficiency-wrapper">
-                            
+                            <Profficiency />
                         </Box>
                     </Box>
                 </Center>
