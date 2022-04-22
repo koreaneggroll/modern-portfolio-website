@@ -347,7 +347,7 @@ function Aboutme(){
 
 
                 <Center>
-                    <Box mr={{base: '0', md: '600', lg: '700'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
+                    <Box mr={{base: '0', md: '300', lg: '400'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
                         <Box className="about-me-avatar">
                             <Avatar
                              name="Arin Grigoras" 
@@ -382,7 +382,7 @@ function Aboutme(){
 
 
 
-                    <Box className="about-me-profficiency">
+                    <Box mr={{base: '0', md: '300', lg: '400'}} mb={{base: '0', md: '200', lg: '300'}} className="about-me-profficiency">
                         <Box className="profficiency-wrapper">
                             <Profficiency />
                         </Box>

@@ -4,7 +4,9 @@ import {
     Box,
     VStack,
     Text,
-    Flex
+    Flex,
+    Progress,
+    Center
 } from '@chakra-ui/react';
 
 
@@ -18,43 +20,47 @@ function Profficiency(props){
                 <Box className="profficiency">
                     <VStack 
                         align='stretch'
-                        spacing={1}
+                        spacing={10}
                         className="profficiency-stack"
                         maxW={400}
                     >
 
-                        <Box h='40px' bg="aqua" className="language-profficiency">
+                        <Center h='40px' bg="twitter.500" className="language-profficiency">
                             <Flex>
+                                
                                 <Text className="language-name">
                                     C
                                 </Text>
+
+
+                                
                             </Flex>
 
-                        </Box>
+                        </Center>
 
-                        <Box h='40px' bg="aqua" className="language-profficiency">
+                        <Center h='40px' w='100px' bg="twitter.500" className="language-profficiency">
                             <Flex>
                                 <Text className="language-name">
                                     C++
                                 </Text>
                             </Flex>
-                        </Box>
+                        </Center>
 
-                        <Box h='40px' bg="aqua" className="language-profficiency">
+                        <Center h='40px' bg="twitter.500" className="language-profficiency">
                             <Flex>
                                 <Text className="language-name">
                                     Python
                                 </Text>
                             </Flex>
-                        </Box>
+                        </Center>
 
-                        <Box h='40px' bg="aqua" className="language-profficiency">
+                        <Center h='40px' bg="twitter.500" className="language-profficiency">
                             <Flex>
                                 <Text className="language-name">
                                     JavaScript
                                 </Text>
                             </Flex>
-                        </Box>
+                        </Center>
 
                     </VStack>
                 </Box>
