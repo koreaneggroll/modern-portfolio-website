@@ -382,113 +382,17 @@ function Aboutme(){
 
                             </Box>
                         </Box>
-                    </Center>
 
 
-                    <Box mt={10} display='block' className="about-me-profficiency">
-                        <Box className="profficiency-wrapper">
-                            <Box display='inline-block' className="profficiency-wrapper">
-                                <Box className="profficiency">
-                                    <VStack 
-                                        align='stretch'
-                                        spacing={10}
-                                        className="profficiency-stack"
-                                        maxW={400}
-                                        display='block'
-                                    >
-
-                                        <Center h='40px' bg="twitter.500" className="language-profficiency">
-                                            <Flex>
-                                                
-                                                <Text className="language-name">
-                                                    C
-                                                </Text>
-
-
-                                                
-                                            </Flex>
-
-                                        </Center>
-
-                                        <Center h='40px' w='100px' bg="twitter.500" className="language-profficiency">
-                                            <Flex>
-                                                <Text className="language-name">
-                                                    C++
-                                                </Text>
-                                            </Flex>
-                                        </Center>
-
-                                        <Center h='40px' bg="twitter.500" className="language-profficiency">
-                                            <Flex>
-                                                <Text className="language-name">
-                                                    Python
-                                                </Text>
-                                            </Flex>
-                                        </Center>
-
-                                        <Center h='40px' bg="twitter.500" className="language-profficiency">
-                                            <Flex>
-                                                <Text className="language-name">
-                                                    JavaScript
-                                                </Text>
-                                            </Flex>
-                                        </Center>
-
-                                    </VStack>
-                                </Box>
-                            </Box>
-                        </Box>
-                    </Box>
-                </Hide>
-
-
-                <Show below="sm">
-                    <Center>
-                        <Box mr={{base: '0', md: '300', lg: '400'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
-                            <Box className="about-me-avatar">
-                                <Avatar
-                                name="Arin Grigoras" 
-                                src={ArinLogo}
-                                size='3xl'
-                                loading="eager"
-                                showBorder={true}
-                                borderWidth='5px'
-                                borderColor='blue.900'
-                                >
-                                    
-                                </Avatar>
-                            </Box>
-
-                            <Box className="about-me-transition-avatar-paragraph">
-                                <Center>
-                                    <ChevronDownIcon color="gray.500" fontSize={40} mt={15} />
-                                </Center>
-                            </Box>
-
-                            <Box display="block" position="relative" align='center' className="about-me-paragraph" maxW={400}>
-                                <Center>
-                                    <Text>
-                                        I'm a Software-Developer working as a Freelancer.
-                                        I have a whole bunch of passion for software and I wish to
-                                        be able to spread the joy with others aswell.
-                                    </Text>
-                                </Center>
-
-                            </Box>
-                        </Box>
-
-
-
-                        <Box display={{base: 'block', md: 'flex', lg: 'flex'}} mr={{base: '0', md: '300', lg: '400'}} mb={{base: '0', md: '200', lg: '300'}} className="about-me-profficiency">
+                        <Box mt={10} display='flex' className="about-me-profficiency">
                             <Box className="profficiency-wrapper">
-                                <Box display={{base: 'block', md: 'flex', lg: 'flex'}} className="profficiency-wrapper">
+                                <Box display='flex' className="profficiency-wrapper">
                                     <Box className="profficiency">
                                         <VStack 
                                             align='stretch'
                                             spacing={10}
                                             className="profficiency-stack"
                                             maxW={400}
-                                            display={{base: 'block', md: 'flex', lg: 'flex'}}
                                         >
 
                                             <Center h='40px' bg="twitter.500" className="language-profficiency">
@@ -534,6 +438,100 @@ function Aboutme(){
                             </Box>
                         </Box>
                     </Center>
+                </Hide>
+
+
+                <Show above="sm">
+                    <Center>
+                        <Box mr={{base: '0', md: '300', lg: '400'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
+                            <Box className="about-me-avatar">
+                                <Avatar
+                                name="Arin Grigoras" 
+                                src={ArinLogo}
+                                size='3xl'
+                                loading="eager"
+                                showBorder={true}
+                                borderWidth='5px'
+                                borderColor='blue.900'
+                                >
+                                    
+                                </Avatar>
+                            </Box>
+
+                            <Box className="about-me-transition-avatar-paragraph">
+                                <Center>
+                                    <ChevronDownIcon color="gray.500" fontSize={40} mt={15} />
+                                </Center>
+                            </Box>
+
+                            <Box display="block" position="relative" align='center' className="about-me-paragraph" maxW={400}>
+                                <Center>
+                                    <Text>
+                                        I'm a Software-Developer working as a Freelancer.
+                                        I have a whole bunch of passion for software and I wish to
+                                        be able to spread the joy with others aswell.
+                                    </Text>
+                                </Center>
+
+                            </Box>
+                        </Box>
+                    </Center>
+
+
+                        <Box display={{base: 'block', md: 'flex', lg: 'flex'}} mr={{base: '0', md: '300', lg: '400'}} mb={{base: '0', md: '200', lg: '300'}} className="about-me-profficiency">
+                            <Box className="profficiency-wrapper">
+                                <Box display={{base: 'block', md: 'flex', lg: 'flex'}} className="profficiency-wrapper">
+                                    <Box className="profficiency">
+                                        <VStack 
+                                            align='stretch'
+                                            spacing={10}
+                                            className="profficiency-stack"
+                                            maxW={400}
+                                            display={{base: 'block', md: 'flex', lg: 'flex'}}
+                                        >
+
+                                            <Center h='40px' bg="twitter.500" className="language-profficiency">
+                                                <Flex>
+                                                    
+                                                    <Text className="language-name">
+                                                        C
+                                                    </Text>
+
+                                                    <Progress value={85} />
+                                                    
+                                                </Flex>
+
+                                            </Center>
+
+                                            <Center h='40px' w='100px' bg="twitter.500" className="language-profficiency">
+                                                <Flex>
+                                                    <Text className="language-name">
+                                                        C++
+                                                    </Text>
+                                                </Flex>
+                                            </Center>
+
+                                            <Center h='40px' bg="twitter.500" className="language-profficiency">
+                                                <Flex>
+                                                    <Text className="language-name">
+                                                        Python
+                                                    </Text>
+                                                </Flex>
+                                            </Center>
+
+                                            <Center h='40px' bg="twitter.500" className="language-profficiency">
+                                                <Flex>
+                                                    <Text className="language-name">
+                                                        JavaScript
+                                                    </Text>
+                                                </Flex>
+                                            </Center>
+
+                                        </VStack>
+                                    </Box>
+                                </Box>
+                            </Box>
+                        </Box>
                 </Show>
 
                 
