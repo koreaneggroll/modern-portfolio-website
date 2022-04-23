@@ -204,7 +204,6 @@ function Main(){
 
             </Box>
 
-
             <Outlet />
         </Box>
     );
