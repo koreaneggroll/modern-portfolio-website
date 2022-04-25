@@ -68,7 +68,7 @@ function Aboutme(){
                                         </Text>
                                     </b>
                                 </Text>
-                                
+
                             </Box>
 
                             <Show below='sm'>
@@ -102,14 +102,14 @@ function Aboutme(){
                                     <ChevronDownIcon />
                                 </Box>
                             </Show>
-                            
+
                         </Box>
 
-                        
-                        
+
+
                     </Box>
 
-    */}  
+    */}
 
 
             <Box display="block" className="about-me-wrapper">
@@ -127,7 +127,7 @@ function Aboutme(){
                 <Hide below="sm">
                     <Center>
                         <Box mt={20} className="quick-overview-of-attributes">
-                            
+
                             <Grid className="attributes" display='flex' gap={{base: '20', md: '20', lg: '60'}}>
 
                                 <GridItem className="attribute-grid-item">
@@ -227,7 +227,7 @@ function Aboutme(){
                                         </PopoverContent>
                                     </Popover>
                                 </GridItem>
-                                
+
                             </Grid>
                         </Box>
                     </Center>
@@ -352,17 +352,7 @@ function Aboutme(){
                     <Center>
                         <Box mr={{base: '0', md: '300', lg: '400'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
                             <Box className="about-me-avatar">
-                                <Avatar
-                                name="Arin Grigoras" 
-                                src={ArinLogo}
-                                size='3xl'
-                                loading="eager"
-                                showBorder={true}
-                                borderWidth='5px'
-                                borderColor='blue.900'
-                                >
-                                    
-                                </Avatar>
+                                
                             </Box>
 
                             <Box className="about-me-transition-avatar-paragraph">
@@ -383,9 +373,9 @@ function Aboutme(){
                             </Box>
                         </Box>
 
-                        
+
                         <Box mb={0} className="my-skills">
-                            
+
                             <Box mr={40} className="myskills-header">
                                 <Text>
                                     My Skills
@@ -393,7 +383,7 @@ function Aboutme(){
                                 </Text>
                             </Box>
 
-                            
+
 
                             <Box mt={20} className="language-profficiency-wrapper">
                                 <Box ml={-20} className="language-profficiency">
@@ -419,15 +409,15 @@ function Aboutme(){
 
 
                                         </UnorderedList>
-                                        
+
                                     </Stack>
                                 </Box>
                             </Box>
 
                         </Box>
-                        
 
-                        
+
+
                     </Center>
                 </Hide>
 
@@ -436,17 +426,7 @@ function Aboutme(){
                     <Center>
                         <Box mr={{base: '0', md: '300', lg: '400'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
                             <Box className="about-me-avatar">
-                                <Avatar
-                                name="Arin Grigoras" 
-                                src={ArinLogo}
-                                size='3xl'
-                                loading="eager"
-                                showBorder={true}
-                                borderWidth='5px'
-                                borderColor='blue.900'
-                                >
-                                    
-                                </Avatar>
+
                             </Box>
 
                             <Box className="about-me-transition-avatar-paragraph">
@@ -471,7 +451,7 @@ function Aboutme(){
 
 
                             <Box mt={20} className="my-skills">
-                            
+
                                 <Center>
                                     <Box className="myskills-header">
                                         <Text>
@@ -480,7 +460,7 @@ function Aboutme(){
                                         </Text>
                                     </Box>
                                 </Center>
-                                
+
 
                                 <Box mt={20} className="language-profficiency-wrapper">
                                     <Box  className="language-profficiency">
@@ -506,7 +486,7 @@ function Aboutme(){
 
 
                                             </UnorderedList>
-                                            
+
                                         </Stack>
                                     </Box>
                                 </Box>
@@ -519,20 +499,20 @@ function Aboutme(){
 
                             </Box>
                         </Box>
-                        
+
                     </Center>
 
 
-                        
+
                 </Show>
 
-                
+
             </Box>
-                    
 
 
 
-                
+
+
             </Box>
         </ChakraProvider>
     );
