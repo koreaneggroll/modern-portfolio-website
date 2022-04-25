@@ -27,7 +27,6 @@ import {
     ListItem,
     Show,
 } from '@chakra-ui/react';
-import Aboutme from './AboutMe';
 
 import { PhoneIcon, ArrowDownIcon } from '@chakra-ui/icons';
 import Emoji from './Custom/Emoji';
@@ -44,7 +43,7 @@ function Main(){
             <Center>
               <Box className="main-page">
                   <Box ml={{base: '10', md: '0', lg: '0'}} mr={{base: '0', md: '150', lg: '250'}} className="wrapper-welcome-page">
-                      <Box mb={{base: '0', md: '20', lg: '20'}} className="welcome-page">
+                      <Box mb={{base: '0', md: '0', lg: '0'}} className="welcome-page">
                           <Text fontSize='20px' className="welcome-text">
                               Hi, my name is...
                           </Text>
@@ -73,6 +72,24 @@ function Main(){
                             as a <a className="underline-intro">Freelancer</a>.
 
                           </p>
+
+
+                          <Show above="sm">
+                            <Center>
+                              <Box className="welcome-arrow-to-about-me">
+                                <div class="mouse_scroll">
+                                  <div class="mouse">
+                                    <div class="wheel"></div>
+                                  </div>
+                                  <div>
+                                    <span class="m_scroll_arrows unu"></span>
+                                    <span class="m_scroll_arrows doi"></span>
+                                    <span class="m_scroll_arrows trei"></span>
+                                  </div>
+                                </div>
+                              </Box>
+                            </Center>
+                          </Show>
                       </Box>
                   </Box>
               </Box>
