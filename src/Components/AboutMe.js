@@ -19,12 +19,10 @@ import {
     PopoverArrow,
     PopoverCloseButton,
     Avatar,
-    Flex,
     UnorderedList,
     ListItem,
     Stack,
-    Progress,
-    Kbd
+    Spacer
 } from '@chakra-ui/react';
 
 
@@ -465,6 +463,59 @@ function Aboutme(){
                                         be able to spread the joy with others aswell.
                                     </Text>
                                 </Center>
+
+                            </Box>
+
+
+                            <Divider />
+
+
+                            <Box mt={20} className="my-skills">
+                            
+                                <Center>
+                                    <Box className="myskills-header">
+                                        <Text>
+                                            My Skills
+                                            <br/>
+                                        </Text>
+                                    </Box>
+                                </Center>
+                                
+
+                                <Box mt={20} className="language-profficiency-wrapper">
+                                    <Box  className="language-profficiency">
+                                        <Stack className="language-profficiency-stack">
+                                            <UnorderedList spacing={10} className="languages">
+
+                                                <ListItem className="language">
+                                                    <Profficiency text="C/C++" value={90}/>
+                                                </ListItem>
+
+                                                <ListItem className="language">
+                                                    <Profficiency text="Git" value={85}/>
+                                                </ListItem>
+
+                                                <ListItem className="language">
+                                                    <Profficiency text="JavaScript" value={75}/>
+                                                </ListItem>
+
+
+                                                <ListItem className="language">
+                                                    <Profficiency text="Python" value={60}/>
+                                                </ListItem>
+
+
+                                            </UnorderedList>
+                                            
+                                        </Stack>
+                                    </Box>
+                                </Box>
+
+
+                                <br/>
+                                <br/>
+                                <br/>
+                                <br/>
 
                             </Box>
                         </Box>
