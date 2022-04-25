@@ -27,6 +27,7 @@ import {
 
 
 import "../Css/AboutMe.css";
+import "../Css/aboutme-scss.css";
 
 import TopBar from './TopBar';
 import Profficiency from './Custom/Profficiency';
@@ -352,7 +353,7 @@ function Aboutme(){
                     <Center>
                         <Box mr={{base: '0', md: '300', lg: '400'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
                             <Box className="about-me-avatar">
-                                
+
                             </Box>
 
                             <Box className="about-me-transition-avatar-paragraph">
@@ -424,7 +425,7 @@ function Aboutme(){
 
                 <Show below="sm">
                     <Center>
-                        <Box mr={{base: '0', md: '300', lg: '400'}} mt={{base: '10', md: '20', lg: '20'}} className="about-me-avatar-and-paragraph">
+                        <Box mt={20} className="about-me-avatar-and-paragraph">
                             <Box className="about-me-avatar">
 
                             </Box>
