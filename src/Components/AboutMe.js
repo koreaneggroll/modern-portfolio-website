@@ -44,7 +44,6 @@ import ArinLogo from "../Pictures/arin-logo.png";
 
 function Aboutme(){
 
-    
 
     return(
         <ChakraProvider theme={theme}>
@@ -385,6 +384,17 @@ function Aboutme(){
                             </Box>
                         </Box>
 
+                        
+                        <Box display='flex' className="my-skills">
+                            <Center>
+                                <Box mb={500} className="myskills-header">
+                                    <Text>
+                                        My Skills
+                                    </Text>
+                                </Box>
+                            </Center>
+                        </Box>
+                        
 
                         
                     </Center>
@@ -425,6 +435,7 @@ function Aboutme(){
 
                             </Box>
                         </Box>
+                        
                     </Center>
 
 
