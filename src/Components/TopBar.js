@@ -14,6 +14,9 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
+
+import "../Css/topbar.css";
+
 function TopBar(){
     return(
         <>
@@ -22,7 +25,7 @@ function TopBar(){
                     Logo
                 </Center>
 
-                <Center display={{base: 'none', md: 'flex', lg: 'flex'}} color="teal">
+                <Center display={{base: 'none', md: 'flex', lg: 'flex'}} className="topbar-email">
                     <Box ml={{base: '0', md: '2', lg: '20'}}>
                         <ChevronRightIcon />
                     </Box>

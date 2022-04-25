@@ -12,7 +12,7 @@
 
 .welcome-name{
   font-family: Consolas, monaco, monospace;
-  font-size: 60px;
+  font-size: 70px;
   font-style: normal;
   font-weight: 800;
   margin-left: 5px;
@@ -23,4 +23,24 @@
   color: #64ffda;
   margin: 0px 0px 20px 4px;
   font-family: monospace;
+}
+
+.welcome-arrow-transition{
+  margin: 20px 0px 0px 0px;
+  font-size: 20px;
+  color: gray;
+}
+
+
+.welcome-brief-intro{
+  color: gray;
+  margin: 10px 0px 0px 5px;
+}
+
+
+.welcome-proffesion{
+  font-size: 30px;
+  color: #008080;
+  font-family: monospace;
+  margin: 20px 0px 0px 30px;
 }
