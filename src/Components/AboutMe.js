@@ -20,10 +20,11 @@ import {
     PopoverCloseButton,
     Avatar,
     Flex,
-    VStack,
+    UnorderedList,
+    ListItem,
+    Stack,
     Progress,
-    HStack,
-    Stack
+    Kbd
 } from '@chakra-ui/react';
 
 
@@ -385,14 +386,78 @@ function Aboutme(){
                         </Box>
 
                         
-                        <Box display='flex' className="my-skills">
-                            <Center>
-                                <Box mb={500} className="myskills-header">
-                                    <Text>
-                                        My Skills
-                                    </Text>
+                        <Box mb={0} className="my-skills">
+                            
+                            <Box mr={40} className="myskills-header">
+                                <Text>
+                                    My Skills
+                                    <br/>
+                                </Text>
+                            </Box>
+
+                            
+
+                            <Box mt={20} className="language-profficiency-wrapper">
+                                <Box ml={-20} className="language-profficiency">
+                                    <Stack className="language-profficiency-stack">
+                                        <UnorderedList spacing={10} className="languages">
+
+                                            <ListItem className="language">
+                                                <Text>
+                                                    <Kbd>
+                                                        C/C++
+                                                    </Kbd>
+                                                </Text>
+
+                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={90}/>
+
+
+                                            </ListItem>
+
+                                            <ListItem className="language">
+                                                <Text>
+                                                    <Kbd>
+                                                        Git
+                                                    </Kbd>
+                                                </Text>
+
+                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={85}/>
+
+
+                                            </ListItem>
+
+                                            <ListItem className="language">
+                                                <Text>
+                                                    <Kbd>
+                                                        JavaScript
+                                                    </Kbd>
+                                                </Text>
+
+                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={75}/>
+
+
+                                            </ListItem>
+
+
+                                            <ListItem className="language">
+                                                <Text>
+                                                    <Kbd>
+                                                        Python
+                                                    </Kbd>
+                                                </Text>
+
+                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={60}/>
+
+
+                                            </ListItem>
+
+
+                                        </UnorderedList>
+                                        
+                                    </Stack>
                                 </Box>
-                            </Center>
+                            </Box>
+
                         </Box>
                         
 
