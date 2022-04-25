@@ -22,7 +22,7 @@ function TopBar(){
                     Logo
                 </Center>
 
-                <Center display={{base: 'none', md: 'flex', lg: 'flex'}} color="gray.600">
+                <Center display={{base: 'none', md: 'flex', lg: 'flex'}} color="teal">
                     <Box ml={{base: '0', md: '2', lg: '20'}}>
                         <ChevronRightIcon />
                     </Box>

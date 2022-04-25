@@ -3,13 +3,13 @@ import React, { useRef } from 'react';
 
 import { Outlet, Link } from "react-router-dom";
 
-import { 
-    Box, 
-    Flex, 
-    IconButton,  
-    Center, 
-    Text, 
-    Divider, 
+import {
+    Box,
+    Flex,
+    IconButton,
+    Center,
+    Text,
+    Divider,
     Drawer,
     DrawerBody,
     DrawerFooter,
@@ -17,7 +17,7 @@ import {
     DrawerOverlay,
     DrawerContent,
     DrawerCloseButton,
-    useDisclosure, 
+    useDisclosure,
     Button,
     VStack,
     Hide,
@@ -42,7 +42,7 @@ function Main(){
     const btnRef = useRef();
 
 
-    
+
 
 
     return(
@@ -65,7 +65,7 @@ function Main(){
                             </Text>
                         </Box>
 
-                    
+
                     </Flex>
                 </Show>
 
@@ -89,16 +89,18 @@ function Main(){
                     </Center>
                 </Show>
 
+                {/*
+
                 <Center>
                     <Flex mt={130} mb={10} className="Welcome-bottom-side">
                         <Box className="Welcome-DrawerButton">
                             <IconButton
-                             isRound={true} 
-                             onClick={onOpen}  
-                             aria-label='OpenDrawer' 
-                             icon={<ArrowRightIcon />} 
+                             isRound={true}
+                             onClick={onOpen}
+                             aria-label='OpenDrawer'
+                             icon={<ArrowRightIcon />}
                              ref={btnRef}
-                             />                               
+                             />
 
                             <Drawer
                                 isOpen={isOpen}
@@ -108,7 +110,7 @@ function Main(){
                                 closeOnEsc={true}
                                 closeOnOverlayClick={true}
                             >
-                                
+
                                 <DrawerOverlay />
                                 <DrawerContent>
                                     <DrawerCloseButton />
@@ -155,7 +157,7 @@ function Main(){
 
                                                 <ListItem>
                                                     <Link to="/projects">
-                                                        <Box 
+                                                        <Box
                                                         className="drawer-box"
                                                             maxW='sm'
                                                             borderWidth='1px'
@@ -201,6 +203,7 @@ function Main(){
                         </Box>
                     </Flex>
                 </Center>
+              */}
 
             </Box>
 

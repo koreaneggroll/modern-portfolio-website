@@ -35,7 +35,7 @@ function Page() {
             </Flex>
 
         </Box>
-        
+
 
 
     </ChakraProvider>
