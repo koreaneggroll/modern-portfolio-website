@@ -45,7 +45,7 @@ function Main(){
                   <Box ml={{base: '10', md: '0', lg: '0'}} mr={{base: '0', md: '150', lg: '250'}} className="wrapper-welcome-page">
                       <Box mb={{base: '0', md: '0', lg: '0'}} className="welcome-page">
                           <Text fontSize='20px' className="welcome-text">
-                              Hi, my name is...
+                              Hi, my name is... <span className="line"></span>
                           </Text>
 
                           <p className="welcome-name">
@@ -81,6 +81,21 @@ function Main(){
                                   <div class="mouse">
                                     <div class="wheel"></div>
                                   </div>
+                                  <div>
+                                    <span class="m_scroll_arrows unu"></span>
+                                    <span class="m_scroll_arrows doi"></span>
+                                    <span class="m_scroll_arrows trei"></span>
+                                  </div>
+                                </div>
+                              </Box>
+                            </Center>
+                          </Show>
+
+
+                          <Show below="sm">
+                            <Center>
+                              <Box className="welcome-arrow-to-about-me">
+                                <div class="mouse_scroll">
                                   <div>
                                     <span class="m_scroll_arrows unu"></span>
                                     <span class="m_scroll_arrows doi"></span>
