@@ -38,176 +38,26 @@ import "../Css/Main.css";
 
 function Main(){
 
-    const { isOpen, onOpen, onClose } = useDisclosure();
-    const btnRef = useRef();
-
-
-
-
-
     return(
         <Box className="Main">
 
-            <Box className="main-page">
+            <Center>
+              <Box className="main-page">
+                  <Box ml={{base: '10', md: '0', lg: '0'}} mr={{base: '0', md: '150', lg: '250'}} className="wrapper-welcome-page">
+                      <Box mb={{base: '0', md: '200', lg: '250'}} className="welcome-page">
+                          <Text fontSize='20px' className="welcome-text">
+                              Hi, my name is
+                          </Text>
 
-                <Show above="sm">
-                    <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
-                        <Box m={{base: '10', md: '20', lg: '40'}}>
-
-                            <Text   fontSize={80} className="welcome-text-main">
-                                <b>I'm Arin</b>
-                                <Text textDecoration='underline' ml={{base: '10', md: '20', lg: '40'}} fontSize={50}>
-                                    Software
-                                </Text>
-                                <Text textDecoration='underline' fontSize={50}>
-                                    Developer
-                                </Text>
-                            </Text>
-                        </Box>
-
-
-                    </Flex>
-                </Show>
-
-
-                <Show below="sm">
-                    <Center>
-                        <Flex  className="Welcome" display={{base: 'inline-block', md: 'flex', lg: 'flex'}}>
-                            <Box m={{base: '10', md: '20', lg: '40'}}>
-
-                                <Text   fontSize={80} className="welcome-text-main">
-                                    <b>I'm Arin</b>
-                                    <Text textDecoration='underline' ml={{base: '10', md: '20', lg: '40'}} fontSize={50}>
-                                        Software
-                                    </Text>
-                                    <Text textDecoration='underline' fontSize={50}>
-                                        Developer
-                                    </Text>
-                                </Text>
-                            </Box>
-                        </Flex>
-                    </Center>
-                </Show>
-
-                {/*
-
-                <Center>
-                    <Flex mt={130} mb={10} className="Welcome-bottom-side">
-                        <Box className="Welcome-DrawerButton">
-                            <IconButton
-                             isRound={true}
-                             onClick={onOpen}
-                             aria-label='OpenDrawer'
-                             icon={<ArrowRightIcon />}
-                             ref={btnRef}
-                             />
-
-                            <Drawer
-                                isOpen={isOpen}
-                                placement="left"
-                                onClose={onClose}
-                                finalFocusRef={btnRef}
-                                closeOnEsc={true}
-                                closeOnOverlayClick={true}
-                            >
-
-                                <DrawerOverlay />
-                                <DrawerContent>
-                                    <DrawerCloseButton />
-
-                                    <DrawerHeader>
-                                        Explore &nbsp;
-                                        <Emoji symbol="😎" />
-                                    </DrawerHeader>
-
-                                    <Divider orientation="horizontal"/>
-
-
-                                    <DrawerBody>
-                                        <VStack mt={10}>
-
-                                            <UnorderedList spacing={4}>
-                                                <ListItem>
-                                                    <Link to="/about-me">
-                                                        <Box
-                                                            className="drawer-box"
-                                                            maxW='sm'
-                                                            borderWidth='1px'
-                                                            borderRadius='lg'
-                                                            overflow="hidden"
-                                                            as='button'
-                                                            h={{base: '90', md: '95', lg: '100'}}
-                                                            w={{base: '90', md: '95', lg: '100'}}
-                                                        >
-
-                                                            <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
-                                                                <Heading ml={-5} fontSize={20} className="drawer-heading">
-                                                                    About me
-                                                                    <Badge ml={2} colorScheme='purple'>Interesting</Badge>
-                                                                </Heading>
-
-
-                                                                <Text color='gray.500' className="drawer-paragraph">
-                                                                    Learn more about me!
-                                                                </Text>
-                                                            </Text>
-                                                        </Box>
-                                                    </Link>
-                                                </ListItem>
-
-                                                <ListItem>
-                                                    <Link to="/projects">
-                                                        <Box
-                                                        className="drawer-box"
-                                                            maxW='sm'
-                                                            borderWidth='1px'
-                                                            borderRadius='lg'
-                                                            overflow="hidden"
-                                                            as="button"
-                                                            h={{base: '90', md: '95', lg: '100'}}
-                                                            w={{base: '90', md: '95', lg: '100'}}
-                                                            >
-
-                                                            <Text mt={1} mb={1} ml={{base: '10', md: '10', lg: '10'}} mr={{base: '5', md: '5', lg: '10'}} className="drawer-wrapper">
-                                                                <Heading ml={-5} fontSize={20} className="drawer-heading">
-                                                                    Projects
-                                                                    <Badge ml={2} colorScheme='yellow'>Interesting</Badge>
-                                                                </Heading>
-
-
-                                                                <Text color='gray.500' className="drawer-paragraph">
-                                                                    Some of them are cool
-                                                                </Text>
-                                                            </Text>
-
-                                                        </Box>
-                                                    </Link>
-                                                </ListItem>
-
-                                            </UnorderedList>
-                                        </VStack>
-                                    </DrawerBody>
-
-
-                                    <DrawerFooter>
-                                        <Hide below='md'>
-                                            <Button  variant='outline' onClick={onClose}>
-                                                Cancel
-                                            </Button>
-                                        </Hide>
-                                    </DrawerFooter>
-
-                                </DrawerContent>
-
-                            </Drawer>
-                        </Box>
-                    </Flex>
-                </Center>
-              */}
-
-            </Box>
-
-            <Outlet />
+                          <p className="welcome-name">
+                            <b>
+                              Arin Grigoras.
+                            </b>
+                          </p>
+                      </Box>
+                  </Box>
+              </Box>
+            </Center>
         </Box>
     );
 }

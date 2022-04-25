@@ -29,10 +29,8 @@ function Page() {
         }
         <Box className="Page-wrapper">
             <TopBar />
+            <Main />
 
-            <Flex className="main">
-                <Main />
-            </Flex>
 
         </Box>
 
