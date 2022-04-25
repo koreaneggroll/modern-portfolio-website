@@ -1,12 +1,10 @@
 import React from 'react';
 
 import {
-    Box,
-    VStack,
+    Kbd,
     Text,
-    Flex,
     Progress,
-    Center
+
 } from '@chakra-ui/react';
 
 
@@ -16,56 +14,14 @@ import "../../Css/Profficiency.css"
 function Profficiency(props){
     return(
         <>
-            <Box display={{base: 'block', md: 'flex', lg: 'flex'}} className="profficiency-wrapper">
-                <Box className="profficiency">
-                    <VStack 
-                        align='stretch'
-                        spacing={10}
-                        className="profficiency-stack"
-                        maxW={400}
-                        display={{base: 'block', md: 'flex', lg: 'flex'}}
-                    >
+            <Text>
+                <Kbd>
+                    {props.text}
+                </Kbd>
+            </Text>
 
-                        <Center h='40px' bg="twitter.500" className="language-profficiency">
-                            <Flex>
-                                
-                                <Text className="language-name">
-                                    C
-                                </Text>
+            <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={props.value}/>
 
-
-                                
-                            </Flex>
-
-                        </Center>
-
-                        <Center h='40px' w='100px' bg="twitter.500" className="language-profficiency">
-                            <Flex>
-                                <Text className="language-name">
-                                    C++
-                                </Text>
-                            </Flex>
-                        </Center>
-
-                        <Center h='40px' bg="twitter.500" className="language-profficiency">
-                            <Flex>
-                                <Text className="language-name">
-                                    Python
-                                </Text>
-                            </Flex>
-                        </Center>
-
-                        <Center h='40px' bg="twitter.500" className="language-profficiency">
-                            <Flex>
-                                <Text className="language-name">
-                                    JavaScript
-                                </Text>
-                            </Flex>
-                        </Center>
-
-                    </VStack>
-                </Box>
-            </Box>
         </>
     );
 }

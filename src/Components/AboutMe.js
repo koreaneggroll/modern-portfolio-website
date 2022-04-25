@@ -403,52 +403,20 @@ function Aboutme(){
                                         <UnorderedList spacing={10} className="languages">
 
                                             <ListItem className="language">
-                                                <Text>
-                                                    <Kbd>
-                                                        C/C++
-                                                    </Kbd>
-                                                </Text>
-
-                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={90}/>
-
-
+                                                <Profficiency text="C/C++" value={90}/>
                                             </ListItem>
 
                                             <ListItem className="language">
-                                                <Text>
-                                                    <Kbd>
-                                                        Git
-                                                    </Kbd>
-                                                </Text>
-
-                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={85}/>
-
-
+                                                <Profficiency text="Git" value={85}/>
                                             </ListItem>
 
                                             <ListItem className="language">
-                                                <Text>
-                                                    <Kbd>
-                                                        JavaScript
-                                                    </Kbd>
-                                                </Text>
-
-                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={75}/>
-
-
+                                                <Profficiency text="JavaScript" value={75}/>
                                             </ListItem>
 
 
                                             <ListItem className="language">
-                                                <Text>
-                                                    <Kbd>
-                                                        Python
-                                                    </Kbd>
-                                                </Text>
-
-                                                <Progress className="language-profficiency-value" mt={5} ml={5} size='lg' value={60}/>
-
-
+                                                <Profficiency text="Python" value={60}/>
                                             </ListItem>
 
 
