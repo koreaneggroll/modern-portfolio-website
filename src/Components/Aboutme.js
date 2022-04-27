@@ -4,9 +4,7 @@ import React from 'react';
 import {
     Box,
     Center,
-    Text,
     Flex,
-    Heading
 } from '@chakra-ui/react';
 
 

@@ -1,9 +1,8 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import {
   ChakraProvider,
   Box,
   theme,
-  Flex,
 } from '@chakra-ui/react';
 
 

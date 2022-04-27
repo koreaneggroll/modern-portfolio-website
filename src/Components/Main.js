@@ -1,7 +1,4 @@
-import React, { useRef } from 'react';
-
-
-import { Outlet, Link } from "react-router-dom";
+import React from 'react';
 
 import {
     Box,
@@ -10,7 +7,7 @@ import {
     Show,
 } from '@chakra-ui/react';
 
-import { PhoneIcon, ArrowDownIcon } from '@chakra-ui/icons';
+import { ArrowDownIcon } from '@chakra-ui/icons';
 import Emoji from './Custom/Emoji';
 
 
