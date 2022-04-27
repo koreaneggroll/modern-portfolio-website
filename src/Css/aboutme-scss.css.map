@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAIA,gBAAgB;EAEd,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EAmBZ,gBAAgB,EAAE,mCAAmC;EACrD,eAAe,EAAE,KAAK;EACtB,mBAAmB,EAAE,MAAM;ECfjB,yBAAoC;IDThD,gBAAgB;MAMZ,KAAK,EAAE,KAAK;MACZ,MAAM,EAAE,KAAK;ECEL,yBAAoC;IDThD,gBAAgB;MAYZ,KAAK,EAAE,KAAK;MACZ,MAAM,EAAE,KAAK;ECJL,yBAAoC;IDThD,gBAAgB;MAkBZ,KAAK,EAAE,KAAK;MACZ,MAAM,EAAE,KAAK",
-"sources": ["../Sass/_aboutme.scss","../Sass/_breakpoint.scss"],
-"names": [],
-"file": "aboutme-scss.css"
-}

@@ -5,31 +5,14 @@ import { Outlet, Link } from "react-router-dom";
 
 import {
     Box,
-    Flex,
-    IconButton,
     Center,
     Text,
-    Divider,
-    Drawer,
-    DrawerBody,
-    DrawerFooter,
-    DrawerHeader,
-    DrawerOverlay,
-    DrawerContent,
-    DrawerCloseButton,
-    useDisclosure,
-    Button,
-    VStack,
-    Hide,
-    Heading,
-    Badge,
-    UnorderedList,
-    ListItem,
     Show,
 } from '@chakra-ui/react';
 
 import { PhoneIcon, ArrowDownIcon } from '@chakra-ui/icons';
 import Emoji from './Custom/Emoji';
+
 
 
 import "../Css/Main.css";
@@ -105,6 +88,7 @@ function Main(){
                               </Box>
                             </Center>
                           </Show>
+                          
                       </Box>
                   </Box>
               </Box>

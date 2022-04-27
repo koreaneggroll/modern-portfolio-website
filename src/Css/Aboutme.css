@@ -1,0 +1,26 @@
+.about-me-wrapper{
+}
+
+
+.number{
+    color: #64ffda;
+    font-size: 20px;
+}
+
+
+
+
+
+.header{
+    margin-left: 20px;
+}
+
+
+.about-header{
+    font-size: 28px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+}

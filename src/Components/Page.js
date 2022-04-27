@@ -10,6 +10,7 @@ import {
 
 import TopBar from './TopBar';
 import Main from './Main';
+import Aboutme from './Aboutme';
 import "../Css/Page.css";
 
 
@@ -30,7 +31,7 @@ function Page() {
         <Box className="Page-wrapper">
             <TopBar />
             <Main />
-
+            <Aboutme />
 
         </Box>
 
