@@ -70,3 +70,14 @@
     color: $textcolor;
     margin-top: 10px;
 }
+
+
+.about-me-photo{
+    @include breakpoint(md){
+        margin-left: 200px;
+    }
+
+    @include breakpoint(lg){
+        margin-left: 400px;
+    }
+}
