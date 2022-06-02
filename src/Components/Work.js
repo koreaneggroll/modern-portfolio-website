@@ -11,8 +11,15 @@ import {
     Divider,
     Stack,
     Hide,
-    Show
+    Show,
+    Flex
 } from '@chakra-ui/react';
+
+
+import WorkTab from './Custom/WorkTab';
+
+import { ArrowRightIcon } from '@chakra-ui/icons';
+
 
 import "../Css/worktabs.css";
 
@@ -32,9 +39,39 @@ function Work(){
                             <Tab>N/A</Tab>
                         </TabList>
 
-                        <TabPanels>
-                            <TabPanel>
-                                
+                        <TabPanels direction="ltr">
+                            <TabPanel className="work-tab">
+                                <Flex className="work-heading">
+                                    <b className="work-rank">
+                                        Freelancer 
+                                    </b>
+
+                                    <i className="work-company">
+                                        <span className="work-company-span">
+                                             @ Fiverr
+                                        </span>
+                                    </i>
+                                </Flex>
+
+                                <Box className="work-time-span">
+                                    <span className="time-span-span">
+                                        April 2020 - present
+                                    </span>
+                                </Box>
+
+
+                                <Box className="work-contents">
+                                    <Box className="work-content-box">
+                                        <ArrowRightIcon />
+
+                                        <span className="work-content-box-span">
+                                        Lorem ipsum Lorem ipsum Lorem ipsum
+                                        </span>
+                                    </Box>
+
+
+
+                                </Box>
                             </TabPanel>
                         </TabPanels>
                     </Tabs>
