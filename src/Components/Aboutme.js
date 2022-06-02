@@ -8,7 +8,8 @@ import {
     Show,
     Divider,
     Image,
-    Spacer
+    Spacer,
+    Hide
 } from '@chakra-ui/react';
 
 
@@ -45,28 +46,14 @@ function Aboutme(){
                 </Box>
 
                 <Flex>
-                    <Box ml={{base: '5', md: "10", lg: "5"}} maxW={{lg: "500"}} className="about-me-paragraph">
+                    <Box ml={{base: '5', md: "10", lg: "5"}} maxW={{md: '400', lg: "500"}} className="about-me-paragraph">
                         <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit ut aliquam purus sit amet luctus. Enim praesent elementum facilisis leo vel fringilla. Nulla pharetra diam sit amet nisl. In fermentum posuere urna nec tincidunt praesent semper feugiat. Justo eget magna fermentum iaculis eu non diam. Feugiat sed lectus vestibulum mattis ullamcorper velit sed. Eget aliquet nibh praesent tristique magna sit. Enim tortor at auctor urna nunc id. Faucibus et molestie ac feugiat sed lectus vestibulum mattis ullamcorper.
                         </p>
                         
                     </Box>
 
-                    <Show above="sm">
-                        <Box className="divider">
-                            <Divider ml={40} mr={40} orientation="vertical"/>
-                        </Box>
-                        <Box mb={{md: '10', lg: '20'}} className="about-me-photo">
-                            
-                        </Box>
-                    </Show>
-
-
-                    <Show below="sm">
-                        <Box clasName="about-me-photo-mobile" >
-                            
-                        </Box>
-                    </Show>
+                    
                 </Flex>
             </Box>
         </Center>
