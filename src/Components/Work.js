@@ -10,12 +10,14 @@ import {
     TabPanels
 } from '@chakra-ui/react';
 
+import "../Css/worktabs.css";
+
 
 function Work(){
     return(
         <Box className="Work">
             <Box className="work-wrapper">
-                <Tabs variant="soft-rounded" colorScheme='teal' className="work-tabs">
+                <Tabs orientation='vertical' variant="soft-rounded" colorScheme='teal' className="work-tabs">
                     <TabList>
                         <Tab>Fiverr</Tab>
                         <Tab>N/A</Tab>

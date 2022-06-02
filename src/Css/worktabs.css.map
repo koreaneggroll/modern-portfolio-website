@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACN,KAAK,EAAE,KAAK;EACZ,QAAQ,EAAC,QAAQ",
+"sources": ["../Sass/_worktabs.scss"],
+"names": [],
+"file": "worktabs.css"
+}
