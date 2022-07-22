@@ -32,7 +32,7 @@ function TopBar(){
 
                     <Box ml={{base: '0', md: '2', lg: '20'}}>
                         <i>
-                            aringrigoras@gmail.com
+                            aringrigofficial@gmail.com
                         </i>
                     </Box>
                 </Center>
