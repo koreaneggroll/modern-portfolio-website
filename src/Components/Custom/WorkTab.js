@@ -8,7 +8,6 @@ import {
 } from '@chakra-ui/react';
 
 
-import { ArrowRightIcon } from '@chakra-ui/icons';
 
 function WorkTab(props){
     return(
