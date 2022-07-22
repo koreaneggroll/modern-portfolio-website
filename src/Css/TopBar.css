@@ -1,0 +1,9 @@
+.icon{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon:hover{
+    color: lightskyblue;
+    transition: 0.5s;
+}

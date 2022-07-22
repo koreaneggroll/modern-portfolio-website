@@ -14,8 +14,14 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 
 import { ColorModeSwitcher } from '../ColorModeSwitcher';
 
+import Discord from '../Pictures/discord.svg';
+import Github from '../Pictures/github.svg';
+import Instagram from '../Pictures/instagram.svg';
+import Twitter from '../Pictures/twitter.svg';
 
-import "../Css/topbar.css";
+
+import "../Css/TopBar.css";
+
 
 function TopBar(){
     return(
@@ -40,27 +46,24 @@ function TopBar(){
                 <Spacer/>
 
                 <Center className="icons">
-                    <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
-                        {
-                            //use icon button
-                        }
-                        Icon
-                    </Circle>
+                    <a className="icon" href>
+                        <img height={30} width={30} src={Github} alt="discord"></img>
+                    </a>
 
 
-                    <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
-                        Icon
-                    </Circle>
+                    <a className="icon" href>
+                        <img height={30} width={30} src={Instagram} alt="discord"></img>
+                    </a>
 
 
-                    <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
-                        Icon
-                    </Circle>
+                    <a className="icon" href>
+                        <img height={30} width={30} src={Twitter} alt="discord"></img>
+                    </a>
 
 
-                    <Circle _hover={{color: 'gray'}} mr={{base: '4', md: '8', lg: '10'}} className="icon">
-                        Icon
-                    </Circle>
+                    <a className="icon" href>
+                        <img height={30} width={30} src={Discord} alt="discord"></img>
+                    </a>
 
 
                     <ColorModeSwitcher />
