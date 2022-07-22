@@ -15,10 +15,10 @@ import {
     Flex
 } from '@chakra-ui/react';
 
+import "../Css/underline-animated.css";
 
-import WorkTab from './Custom/WorkTab';
 
-import { ArrowRightIcon } from '@chakra-ui/icons';
+import "../Css/Work.css";
 
 
 
@@ -33,6 +33,25 @@ function Work(){
 
 
 
+            <Box mr={{base: '10', md: '150', lg: '300'}} className="Work-wrapper">
+                <Box className="Work">
+                   <Flex className="work-header">
+                    <p className="header">
+                            <b>
+                                <span className="line">
+
+                                </span>
+
+                                <a className="">
+                                    Where I've worked
+                                </a>
+                            </b>
+                        </p>
+                    </Flex> 
+                </Box>
+
+
+            </Box>
 
         </Box>
     );

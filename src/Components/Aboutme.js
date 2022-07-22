@@ -18,6 +18,7 @@ import "../Css/Aboutme.css";
 
 
 import aboutmephoto from '../Pictures/arin-logo-new.PNG';
+import "../Css/underline-animated.css";
 
 
 function Aboutme(){
@@ -36,7 +37,10 @@ function Aboutme(){
 
                         <p className="header">
                             <b>
-                                About me
+                                <a className="underline-animated">
+                                    About me
+                                </a>
+                                
                                 <span className="line">
 
                                 </span>
