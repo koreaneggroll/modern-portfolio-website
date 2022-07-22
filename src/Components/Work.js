@@ -43,11 +43,17 @@ function Work(){
                                 </span>
 
                                 <span className="underline-other-way">
-                                    Where I've worked
+                                    Some of my projects
                                 </span>
                             </b>
                         </p>
                     </Flex> 
+                </Box>
+
+
+
+                <Box className="Work-content">
+                    
                 </Box>
 
 
