@@ -21,8 +21,6 @@ import WorkTab from './Custom/WorkTab';
 import { ArrowRightIcon } from '@chakra-ui/icons';
 
 
-import "../Css/worktabs.css";
-import "../Css/Work.css";
 
 
 function Work(){
@@ -34,7 +32,7 @@ function Work(){
             <br/><br/>
 
 
-            
+
 
         </Box>
     );
