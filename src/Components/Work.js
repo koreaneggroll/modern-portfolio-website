@@ -42,9 +42,9 @@ function Work(){
 
                                 </span>
 
-                                <a className="">
+                                <span className="underline-other-way">
                                     Where I've worked
-                                </a>
+                                </span>
                             </b>
                         </p>
                     </Flex> 

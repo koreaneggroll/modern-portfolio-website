@@ -10,3 +10,22 @@ a:after {
   a:hover:after {
     width: 50%;
   }
+
+
+  .underline-other-way:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    border-bottom: 2px solid #64ffda;
+    transition: 0.4s;
+  }
+    .underline-other-way:hover:after {
+    width: 50%;
+  }
+
+  .underline-other-way:not(:hover):after {
+    right: 0;
+    left: auto;
+  }
